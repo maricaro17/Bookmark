@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+:root {
+    --num-tabs: 0;
+    --acent-color: #5166dd;
+    /* Lo modificaremos con JS */
+}
+
+body {
+    font-family: Rubik;
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+main {
+    padding-top: 50px;
+}
+
+.img-primary {
+    position: absolute;
+    right: 42px;
+}
+
+.img-primary img {
+    width: 517px;
+}
+
+.img-feature {
+    position: absolute;
+    left: 100px;
+}
+
+.img-feature img {
+    width: 517px;
+}
+
+.img-feature-speedy {
+    position: absolute;
+    left: 200px;
+}
+
+.img-feature-speedy img {
+    margin-top: 5px;
+    width: 450px;
+}
+
+.img-feature-easy {
+    position: absolute;
+    left: 200px;
+}
+
+.img-feature-easy img {
+    margin-top: 5px;
+    width: 410px;
+}
+
+.browser {
+    width: 100px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.shape {
+    height: 300px;
+    width: 400px;
+    margin-top: 110px;
+}
+
+.shape-background {
+    background-color: var(--acent-color);
+}
+
+.shape-right {
+    border-radius: 200px 0px 0px 200px;
+    float: right;
+}
+
+.shape-left {
+    border-radius: 0px 200px 200px 0px;
+    float: left;
+    width: 550px;
+    height: 350px;
+    margin-top: 85px;
+}
+
+
+/* tabs */
+
+.tabs {
+    position: relative;
+    width: 640px;
+    margin: 0 auto;
+    border-bottom: 1px solid #d5d1d1;
+    /* También puede ser un porcentaje como 100% */
+}
+
+.tabs-list {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+}
+
+.tab-item {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    float: left;
+    height: 60px;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+    width: calc(100% / var(--num-tabs));
+}
+
+.tab-item:hover {
+    color: #EE6E73;
+}
+
+.highlighter {
+    background-color: #EE6E73;
+    bottom: 0;
+    height: 4px;
+    position: absolute;
+    transition: transform 0.2s ease-out;
+    width: calc(100% / var(--num-tabs));
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+/* modificadores */
+
+.mt-8 {
+    margin-top: 3rem !important;
+}
+
+.p-120 {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.py-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.hover-danger:hover {
+    color: #EE6E73 !important;
+}
+
+.bg-acent-color {
+    background-color: var(--acent-color);
+}
+
+.btn-danger:hover {
+    background-color: white !important;
+    color: #EE6E73 !important;
+    border: 1px solid;
+}
+
+.btn-acent-color {
+    background-color: var(--acent-color);
+    color: white;
+}
+
+.btn-acent-color {
+    background-color: var(--acent-color);
+    color: white;
+}
+
+.btn-acent-color:hover {
+    background: white;
+    color: var(--acent-color) !important;
+    border: 1px solid;
+}
+
+p {
+    font-size: 18px;
+    color: gray;
+}
+
+h1 {
+    font-family: Rubik;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 9pt;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+#title-contact {
+    padding: 1rem 5rem;
+    font-size: x-larger;
+}
+
+.col-browser {
+    width: 22%;
+}
+
+.card-browser {
+    border: none;
+    box-shadow: 0px 0px 15px -4px #ededed;
+}
+
+
+/* Accordion */
+
+.accordion-button {
+    color: #000000 !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white !important;
+}
+
+.accordion-button:hover {
+    color: #EE6E73 !important;
+}
+
+.accordion-button::after {
+    background-image: url(https://res.cloudinary.com/dxvzsg7fa/image/upload/v1648870670/bookmark/icon-arrow_hzmnwz.svg) !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(https://res.cloudinary.com/dxvzsg7fa/image/upload/v1649008489/bookmark/icon-arrow-up_quvmyw.svg) !important;
+    transform: rotate(-180deg);
+}
+
+.footer-menu {
+    color: white;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+.footer-menu:hover {
+    color: #EE6E73;
+}
